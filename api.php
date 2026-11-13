@@ -28,18 +28,186 @@ $defaultCars = [
     [
         'id' => 1,
         'kategori_id' => 1,
-        'brand' => 'Rolls-Royce',
-        'model' => 'Phantom VIII Extended',
+        'brand' => 'Bugatti',
+        'model' => 'Chiron Super Sport',
         'tahun' => 2025,
-        'harga_otr' => 24500000000,
-        'spesifikasi' => 'V12 6.75L Twin-Turbo | 563 HP | 900 Nm | 0-100 km/h: 5.4s | Starlight Headliner | Whisper Quiet Cabin',
-        'deskripsi' => 'Standard emas kemewahan dunia otomotif. Menyajikan kenyamanan tiada tanding dengan peredaman suara kabin tingkat tertinggi.',
-        'stok' => 2,
-        'gambar_utama' => 'assets/images/rolls_royce_phantom.jpg'
+        'harga_otr' => 78000000000,
+        'spesifikasi' => 'W16 8.0L Quad-Turbo | 1578 HP | 1600 Nm | 0-100 km/h: 2.3s | Top Speed: 440 km/h | Limited 60 Units',
+        'deskripsi' => 'Hypercar paling eksklusif di muka bumi. Hanya 60 unit diproduksi dengan performa yang melampaui batas fisika.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/bugatti_chiron_super_sport.jpg'
+    ],
+    [
+        'id' => 12,
+        'kategori_id' => 1,
+        'brand' => 'Bugatti',
+        'model' => 'W16 Mistral Roadster',
+        'tahun' => 2025,
+        'harga_otr' => 85000000000,
+        'spesifikasi' => 'W16 8.0L Quad-Turbo | 1600 HP | 1600 Nm | 0-100 km/h: 2.4s | The Ultimate Open-Top Hypercar',
+        'deskripsi' => 'Roadster pamungkas bertenaga W16 legendaris Bugatti. Diproduksi terbatas hanya 99 unit di seluruh dunia.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/bugatti_w16_mistral_roadster.jpg'
+    ],
+    [
+        'id' => 13,
+        'kategori_id' => 1,
+        'brand' => 'Bugatti',
+        'model' => 'Divo Cornering Specialist',
+        'tahun' => 2024,
+        'harga_otr' => 95000000000,
+        'spesifikasi' => 'W16 8.0L Quad-Turbo | 1500 HP | Cornering Specialist | Lateral Accel 1.6G | Downforce +90kg',
+        'deskripsi' => 'Hypercar berkarakter sirkuit dengan aerodinamika agresif dan downforce ekstra dibanding Chiron standar.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/bugatti_divo_cornering_specialist.jpg'
+    ],
+    [
+        'id' => 14,
+        'kategori_id' => 1,
+        'brand' => 'Bugatti',
+        'model' => 'Bolide Track-Only Megacar',
+        'tahun' => 2025,
+        'harga_otr' => 72000000000,
+        'spesifikasi' => 'W16 8.0L Quad-Turbo | 1850 HP | Weight: 1240 kg | 0.67 kg/HP | FIA Le Mans Safety Standards',
+        'deskripsi' => 'Monster trek tanpa kompromi dengan rasio bobot tenaga 0.67 kg per HP dan transmisi balap FIA Le Mans.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/bugatti_bolide_track_only_megacar.jpg'
+    ],
+    [
+        'id' => 15,
+        'kategori_id' => 1,
+        'brand' => 'Bugatti',
+        'model' => 'Tourbillon V16 Hybrid',
+        'tahun' => 2026,
+        'harga_otr' => 88000000000,
+        'spesifikasi' => 'V16 8.3L Cosworth NA + 3 Motors | 1800 HP | 0-100 km/h: 2.0s | Horology-Inspired Cockpit',
+        'deskripsi' => 'Era baru hypercar Bugatti dengan instrumen analog karya pembuat jam tangan Swiss dan mesin naturally aspirated V16 Cosworth.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/bugatti_tourbillon_v16_hybrid.jpg'
     ],
     [
         'id' => 2,
         'kategori_id' => 2,
+        'brand' => 'Pagani',
+        'model' => 'Huayra Roadster BC',
+        'tahun' => 2024,
+        'harga_otr' => 60000000000,
+        'spesifikasi' => 'AMG V12 6.0L Twin-Turbo | 802 HP | 1050 Nm | Carbon-Titanium Carbo-Triax HP62 Monocoque',
+        'deskripsi' => 'Karya seni otomotif dari Horacio Pagani. Desain aerodinamis mutakhir dengan balutan serat karbon terhalus.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/pagani_huayra_roadster_bc.jpg'
+    ],
+    [
+        'id' => 16,
+        'kategori_id' => 2,
+        'brand' => 'Pagani',
+        'model' => 'Utopia Gated Manual Coupé',
+        'tahun' => 2025,
+        'harga_otr' => 65000000000,
+        'spesifikasi' => 'Mercedes-AMG V12 6.0L Twin-Turbo | 864 HP | 1100 Nm | 7-Speed Gated Manual Transverse',
+        'deskripsi' => 'Karya seni purist Horacio Pagani yang menolak elektrifikasi, menghadirkan tuas transmisi manual terbuka yang mempesona.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/pagani_utopia_gated_manual_coupe.jpg'
+    ],
+    [
+        'id' => 17,
+        'kategori_id' => 2,
+        'brand' => 'Pagani',
+        'model' => 'Huayra R Track Pure V12',
+        'tahun' => 2024,
+        'harga_otr' => 58000000000,
+        'spesifikasi' => 'V12-R 6.0L Naturally Aspirated | 850 HP | 9000 RPM | Weight 1050 kg | Inconel Exhaust Symphonic',
+        'deskripsi' => 'Mobil trek bertenaga V12 atmosferik dengan suara knalpot bernada Formula 1 era 1990-an dan bobot hanya 1050 kg.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/pagani_huayra_r_track_pure_v12.jpg'
+    ],
+    [
+        'id' => 18,
+        'kategori_id' => 2,
+        'brand' => 'Pagani',
+        'model' => 'Zonda Cinque Roadster',
+        'tahun' => 2023,
+        'harga_otr' => 75000000000,
+        'spesifikasi' => 'AMG V12 7.3L NA | 678 HP | 780 Nm | 1 of 5 Worldwide | Carbo-Titanium Monocoque | Roof-Scoop Aero',
+        'deskripsi' => 'Salah satu Zonda paling langka dan dicari kolektor dunia. Hanya ada 5 unit di dunia dengan aerodinamika atap roof-scoop.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/pagani_zonda_cinque_roadster.jpg'
+    ],
+    [
+        'id' => 19,
+        'kategori_id' => 2,
+        'brand' => 'Pagani',
+        'model' => 'Imola Roadster Aero-Lab',
+        'tahun' => 2025,
+        'harga_otr' => 82000000000,
+        'spesifikasi' => 'Mercedes-AMG V12 Twin-Turbo | 850 HP | 1100 Nm | Extreme Ground Effect Aero | Limited 8 Units',
+        'deskripsi' => 'Laboratorium berjalan Pagani yang diuji di Sirkuit Imola dengan downforce ekstrem dan teknologi suspensi aktif tercanggih.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/pagani_imola_roadster_aero_lab.jpg'
+    ],
+    [
+        'id' => 3,
+        'kategori_id' => 3,
+        'brand' => 'Koenigsegg',
+        'model' => 'Jesko Absolut',
+        'tahun' => 2025,
+        'harga_otr' => 65000000000,
+        'spesifikasi' => 'V8 5.0L Twin-Turbo | 1600 HP (E85) | Top Speed: 500+ km/h | LST 9-Speed (Light Speed Transmission)',
+        'deskripsi' => 'Megacar tercepat dari Swedia dengan transmisi 9-percepatan LST (Light Speed Transmission).',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/koenigsegg_jesko_absolut.jpg'
+    ],
+    [
+        'id' => 20,
+        'kategori_id' => 3,
+        'brand' => 'Koenigsegg',
+        'model' => 'Gemera 4-Seater Megacar',
+        'tahun' => 2025,
+        'harga_otr' => 48000000000,
+        'spesifikasi' => 'HV8 5.0L Twin-Turbo Hybrid | 2300 HP | 2750 Nm | 4-Seater Mega-GT | All-Wheel Drive & Steering',
+        'deskripsi' => 'Megacar 4 penumpang pertama di dunia dengan pintu dihedral autoskin dan tenaga fantastis 2300 horsepower.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/koenigsegg_gemera_4_seater_megacar.jpg'
+    ],
+    [
+        'id' => 21,
+        'kategori_id' => 3,
+        'brand' => 'Koenigsegg',
+        'model' => 'CC850 ESS Shift by Wire',
+        'tahun' => 2025,
+        'harga_otr' => 62000000000,
+        'spesifikasi' => 'V8 5.0L Twin-Turbo | 1385 HP | 1385 kg (1:1 Ratio) | Engage Shift System (ESS) Dual-Mode Gated Manual',
+        'deskripsi' => 'Penghormatan 20 tahun CC8S dengan teknologi revolusioner transmisi manual simulasi dengan kopling fisik asli.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/koenigsegg_cc850_ess_shift_by_wire.jpg'
+    ],
+    [
+        'id' => 22,
+        'kategori_id' => 3,
+        'brand' => 'Koenigsegg',
+        'model' => 'Jesko Attack High-Downforce',
+        'tahun' => 2025,
+        'harga_otr' => 63000000000,
+        'spesifikasi' => 'V8 5.0L Twin-Turbo | 1600 HP | 1400 kg Downforce | Active Rear Wing | Triplex Damper Suspension',
+        'deskripsi' => 'Varian Jesko yang dioptimalkan untuk lap time sirkuit dengan sayap ganda raksasa dan triplex damper suspension.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/koenigsegg_jesko_attack_high_downforce.jpg'
+    ],
+    [
+        'id' => 23,
+        'kategori_id' => 3,
+        'brand' => 'Koenigsegg',
+        'model' => 'Regera DirectDrive Ghost',
+        'tahun' => 2024,
+        'harga_otr' => 45000000000,
+        'spesifikasi' => 'V8 5.0L Twin-Turbo + Direct Drive | 1500 HP | 2000 Nm | 0-400-0 km/h: 28.8s | Autoskin Hydraulic Doors',
+        'deskripsi' => 'Megacar revolusioner tanpa gearbox (Koenigsegg Direct Drive) dengan sistem hidrolik robotik Autoskin di seluruh pintu.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/koenigsegg_regera_directdrive_ghost.jpg'
+    ],
+    [
+        'id' => 4,
+        'kategori_id' => 4,
         'brand' => 'Ferrari',
         'model' => 'SF90 Stradale Assetto Fiorano',
         'tahun' => 2025,
@@ -47,11 +215,59 @@ $defaultCars = [
         'spesifikasi' => 'V8 4.0L Twin-Turbo Plug-in Hybrid | 986 HP | 0-100 km/h: 2.5s | Top Speed: 340 km/h | eAWD System',
         'deskripsi' => 'Hypercar hybrid buatan Maranello dengan akselerasi instan dan downforce tingkat balap balap Formula 1.',
         'stok' => 1,
-        'gambar_utama' => 'assets/images/ferrari_sf90.jpg'
+        'gambar_utama' => 'assets/images/cars/ferrari_sf90_stradale_assetto_fiorano.jpg'
     ],
     [
-        'id' => 3,
-        'kategori_id' => 3,
+        'id' => 24,
+        'kategori_id' => 4,
+        'brand' => 'Ferrari',
+        'model' => 'Purosangue SUV V12',
+        'tahun' => 2026,
+        'harga_otr' => 25900000000,
+        'spesifikasi' => 'V12 6.5L Naturally Aspirated | 715 HP | 716 Nm | 0-100 km/h: 3.3s | Multimatic Active Suspension',
+        'deskripsi' => 'SUV empat pintu pertama dalam sejarah Ferrari dengan mesin naturally aspirated V12 murni dan suspensi aktif Multimatic.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/ferrari_purosangue_suv_v12.jpg'
+    ],
+    [
+        'id' => 25,
+        'kategori_id' => 4,
+        'brand' => 'Ferrari',
+        'model' => '296 GTB Assetto Fiorano',
+        'tahun' => 2025,
+        'harga_otr' => 14200000000,
+        'spesifikasi' => 'V6 3.0L 120° Twin-Turbo PHEV | 819 HP | 740 Nm | 0-100 km/h: 2.9s | Top Speed: 330 km/h',
+        'deskripsi' => 'Piccolo V12 berlinetta bermesin tengah dengan efisiensi plug-in hybrid dan kelincahan berkendara legendaris.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/ferrari_296_gtb_assetto_fiorano.jpg'
+    ],
+    [
+        'id' => 26,
+        'kategori_id' => 4,
+        'brand' => 'Ferrari',
+        'model' => '812 Competizione V12',
+        'tahun' => 2024,
+        'harga_otr' => 22000000000,
+        'spesifikasi' => 'V12 6.5L Naturally Aspirated | 819 HP | 9500 RPM | Independent 4-Wheel Steering | Carbon Wheels',
+        'deskripsi' => 'Edisi terbatas front-mid V12 paling bertenaga yang pernah dibuat di Maranello dengan putaran mesin hingga 9.500 RPM.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/ferrari_812_competizione_v12.jpg'
+    ],
+    [
+        'id' => 27,
+        'kategori_id' => 4,
+        'brand' => 'Ferrari',
+        'model' => 'Roma Spider Dolce Vita',
+        'tahun' => 2025,
+        'harga_otr' => 11800000000,
+        'spesifikasi' => 'V8 3.9L Twin-Turbo | 612 HP | 760 Nm | 0-100 km/h: 3.4s | Soft-Top Convertible 5-Layer Fabric',
+        'deskripsi' => 'Kembalinya era La Nuova Dolce Vita dengan atap kain elegan 5 lapis yang dapat dibuka dalam 13.5 detik pada kecepatan 60 km/h.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/ferrari_roma_spider_dolce_vita.jpg'
+    ],
+    [
+        'id' => 5,
+        'kategori_id' => 5,
         'brand' => 'Lamborghini',
         'model' => 'Revuelto V12 Hybrid',
         'tahun' => 2026,
@@ -59,19 +275,415 @@ $defaultCars = [
         'spesifikasi' => 'V12 6.5L Naturally Aspirated + 3 Electric Motors | 1001 HP | 0-100 km/h: 2.5s | Monofuselage Carbon',
         'deskripsi' => 'Supercar V12 hybrid pertama dari Sant\'Agata Bolognese. Desain futuristik dengan performa tanpa batas.',
         'stok' => 1,
-        'gambar_utama' => 'assets/images/lamborghini_revuelto.jpg'
+        'gambar_utama' => 'assets/images/cars/lamborghini_revuelto_v12_hybrid.jpg'
     ],
     [
-        'id' => 4,
-        'kategori_id' => 4,
+        'id' => 28,
+        'kategori_id' => 5,
+        'brand' => 'Lamborghini',
+        'model' => 'Urus Performante Super SUV',
+        'tahun' => 2025,
+        'harga_otr' => 13800000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 657 HP | 850 Nm | 0-100 km/h: 3.3s | Akrapovic Titanium Exhaust | Rally Mode',
+        'deskripsi' => 'Super SUV pemecah rekor Pikes Peak dengan kap mesin serat karbon, knalpot titanium Akrapovic, dan mode berkendara Rally.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/lamborghini_urus_performante_super_suv.jpg'
+    ],
+    [
+        'id' => 29,
+        'kategori_id' => 5,
+        'brand' => 'Lamborghini',
+        'model' => 'Huracán STO Super Trofeo',
+        'tahun' => 2024,
+        'harga_otr' => 14500000000,
+        'spesifikasi' => 'V10 5.2L Naturally Aspirated | 631 HP | 565 Nm | RWD | Cofango One-Piece Hood | 75% Carbon Fiber',
+        'deskripsi' => 'Mobil balap homologasi jalan raya dengan bodi 75% serat karbon dan pendinginan aerodinamika Squadra Corse.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/lamborghini_huracan_sto_super_trofeo.jpg'
+    ],
+    [
+        'id' => 30,
+        'kategori_id' => 5,
+        'brand' => 'Lamborghini',
+        'model' => 'Temerario V8 Twin-Turbo',
+        'tahun' => 2026,
+        'harga_otr' => 17500000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo + 3 Motors | 907 HP | 10000 RPM Redline | High-Revving Flat-Plane Crank',
+        'deskripsi' => 'Penerus resmi Huracán dengan mesin flat-plane crank baru yang sanggup berputar hingga 10.000 RPM fantastis.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/lamborghini_temerario_v8_twin_turbo.jpg'
+    ],
+    [
+        'id' => 31,
+        'kategori_id' => 5,
+        'brand' => 'Lamborghini',
+        'model' => 'Sián FKP 37 Roadster',
+        'tahun' => 2024,
+        'harga_otr' => 42000000000,
+        'spesifikasi' => 'V12 6.5L + Supercapacitor Hybrid | 808 HP | 0-100 km/h: 2.8s | 1 of 19 Worldwide | Terzo Millennio Aero',
+        'deskripsi' => 'Hypercar superkapasitor pertama di dunia berdesain radikal Terzo Millennio. Hanya diproduksi 19 unit di seluruh dunia.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/lamborghini_sian_fkp_37_roadster.jpg'
+    ],
+    [
+        'id' => 6,
+        'kategori_id' => 6,
+        'brand' => 'Mercedes',
+        'model' => 'AMG GT Black Series',
+        'tahun' => 2024,
+        'harga_otr' => 15000000000,
+        'spesifikasi' => 'V8 4.0L Biturbo Flat-Plane | 720 HP | 800 Nm | 0-100 km/h: 3.2s | Nurburgring Record King',
+        'deskripsi' => 'Supercar track-focused dari Affalterbach dengan aerodinamika agresif dan mesin flat-plane crank buas.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/mercedes_amg_gt_black_series.jpg'
+    ],
+    [
+        'id' => 32,
+        'kategori_id' => 6,
+        'brand' => 'Mercedes',
+        'model' => 'Maybach S-Class S680 V12',
+        'tahun' => 2025,
+        'harga_otr' => 9800000000,
+        'spesifikasi' => 'V12 6.0L Biturbo | 621 HP | 900 Nm | 4MATIC | Burmester 4D Audio | First-Class Rear Suite',
+        'deskripsi' => 'Puncak kemewahan sedan eksekutif Jerman dengan cat two-tone artisan, sistem audio Burmester 4D, dan pintu belakang elektrik.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/mercedes_maybach_s_class_s680_v12.jpg'
+    ],
+    [
+        'id' => 33,
+        'kategori_id' => 6,
+        'brand' => 'Mercedes',
+        'model' => 'AMG G 63 4x4² Squared',
+        'tahun' => 2025,
+        'harga_otr' => 12500000000,
+        'spesifikasi' => 'V8 4.0L Biturbo | 577 HP | 850 Nm | Portal Axles | Ground Clearance 351mm | 22" Forged Wheels',
+        'deskripsi' => 'SUV segala medan paling perkasa dengan gardan portal tinggi, velg forged 22 inci, dan kemampuan menerjang banjir 91 cm.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/mercedes_amg_g_63_4x4_squared.jpg'
+    ],
+    [
+        'id' => 34,
+        'kategori_id' => 6,
+        'brand' => 'Mercedes',
+        'model' => 'AMG SL 63 4MATIC+ Roadster',
+        'tahun' => 2025,
+        'harga_otr' => 7900000000,
+        'spesifikasi' => 'V8 4.0L Biturbo | 577 HP | 800 Nm | 0-100 km/h: 3.6s | Composite Aluminum Chassis | 2+2 Seats',
+        'deskripsi' => 'Roadster sport ikonik generasi terbaru dengan arsitektur komposit aluminium ringan dan sistem all-wheel drive cerdas.',
+        'stok' => 3,
+        'gambar_utama' => 'assets/images/cars/mercedes_amg_sl_63_4matic_roadster.jpg'
+    ],
+    [
+        'id' => 35,
+        'kategori_id' => 6,
+        'brand' => 'Mercedes',
+        'model' => 'AMG ONE Formula 1 Hypercar',
+        'tahun' => 2025,
+        'harga_otr' => 55000000000,
+        'spesifikasi' => 'V6 1.6L Turbo F1 + 4 Electric Motors | 1049 HP | 11000 RPM Redline | Mercedes-AMG Petronas F1 Tech',
+        'deskripsi' => 'Hypercar sejati bermesin Formula 1 langsung dari tim Mercedes-AMG Petronas F1 dengan rekor lap time Nürburgring Nordschleife.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/mercedes_amg_one_formula_1_hypercar.jpg'
+    ],
+    [
+        'id' => 7,
+        'kategori_id' => 7,
+        'brand' => 'Rolls-Royce',
+        'model' => 'Phantom VIII Extended',
+        'tahun' => 2025,
+        'harga_otr' => 24500000000,
+        'spesifikasi' => 'V12 6.75L Twin-Turbo | 563 HP | 900 Nm | 0-100 km/h: 5.4s | Starlight Headliner | Whisper Quiet Cabin',
+        'deskripsi' => 'Standard emas kemewahan dunia otomotif. Menyajikan kenyamanan tiada tanding dengan peredaman suara kabin tingkat tertinggi.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/rolls_royce_phantom_viii_extended.jpg'
+    ],
+    [
+        'id' => 36,
+        'kategori_id' => 7,
+        'brand' => 'Rolls-Royce',
+        'model' => 'Cullinan Black Badge SUV',
+        'tahun' => 2026,
+        'harga_otr' => 32000000000,
+        'spesifikasi' => 'V12 6.75L Twin-Turbo | 600 HP | 900 Nm | Air Suspension | Viewing Suite Luggage Seats | All-Wheel Drive',
+        'deskripsi' => 'SUV termewah di dunia dengan paket Black Badge berkarakter misterius, kursi Viewing Suite di bagasi, dan Starlight roof.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/rolls_royce_cullinan_black_badge_suv.jpg'
+    ],
+    [
+        'id' => 37,
+        'kategori_id' => 7,
+        'brand' => 'Rolls-Royce',
+        'model' => 'Spectre Electric Coupé',
+        'tahun' => 2025,
+        'harga_otr' => 21000000000,
+        'spesifikasi' => 'Dual Electric Motors | 577 HP | 900 Nm | 0-100 km/h: 4.5s | Drag Coeff 0.25cd | Illuminated Fascia 5500 Stars',
+        'deskripsi' => 'Super-coupe listrik ultra-mewah pertama Rolls-Royce dengan koefisien drag 0.25cd dan Illuminated Fascia berisi 5.500 bintang.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/rolls_royce_spectre_electric_coupe.jpg'
+    ],
+    [
+        'id' => 38,
+        'kategori_id' => 7,
+        'brand' => 'Rolls-Royce',
+        'model' => 'Ghost Extended Series II',
+        'tahun' => 2025,
+        'harga_otr' => 19500000000,
+        'spesifikasi' => 'V12 6.75L Twin-Turbo | 563 HP | 850 Nm | Planar Suspension System | Post-Opulence Pure Architecture',
+        'deskripsi' => 'Sedan kemewahan modern dengan filosofi Post-Opulence, pintu buka tutup otomatis elektrik, dan peredam suspensi wishbone atas.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/rolls_royce_ghost_extended_series_ii.jpg'
+    ],
+    [
+        'id' => 39,
+        'kategori_id' => 7,
+        'brand' => 'Rolls-Royce',
+        'model' => 'Dawn Black Badge Convertible',
+        'tahun' => 2024,
+        'harga_otr' => 23000000000,
+        'spesifikasi' => 'V12 6.6L Twin-Turbo | 593 HP | 840 Nm | The Silent Drophead Tourer | Acoustic French-Seam Soft Top',
+        'deskripsi' => 'Konvertibel paling senyap di dunia saat atap ditutup, menyajikan kenikmatan berkendara grand touring tanpa gangguan suara angin.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/rolls_royce_dawn_black_badge_convertible.jpg'
+    ],
+    [
+        'id' => 8,
+        'kategori_id' => 8,
+        'brand' => 'McLaren',
+        'model' => '750S Spider',
+        'tahun' => 2025,
+        'harga_otr' => 15300000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 750 HP | 800 Nm | 0-100 km/h: 2.8s | Top Speed: 331 km/h | Carbon MonoCell III',
+        'deskripsi' => 'Convertible supercar dengan chassis serat karbon MonoCell III. Atap folding elektrik dalam 11 detik tanpa mengorbankan kekakuan.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/mclaren_750s_spider.jpg'
+    ],
+    [
+        'id' => 40,
+        'kategori_id' => 8,
+        'brand' => 'McLaren',
+        'model' => 'Senna Ultimate Track-Weapon',
+        'tahun' => 2024,
+        'harga_otr' => 32000000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 789 HP | 800 Nm | 800 kg Downforce | Carbon MonoCage III | 1 of 500 Worldwide',
+        'deskripsi' => 'Dinamai untuk mengenang legenda F1 Ayrton Senna. Fokus mutlak pada lap time tercepat tanpa kompromi.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/mclaren_senna_ultimate_track_weapon.jpg'
+    ],
+    [
+        'id' => 41,
+        'kategori_id' => 8,
+        'brand' => 'McLaren',
+        'model' => 'Artura Spider High-Perf Hybrid',
+        'tahun' => 2025,
+        'harga_otr' => 11500000000,
+        'spesifikasi' => 'V6 3.0L 120° Twin-Turbo PHEV | 690 HP | 720 Nm | 0-100 km/h: 3.0s | Carbon Lightweight Architecture MCLA',
+        'deskripsi' => 'High-performance hybrid convertible pertama McLaren dengan handling presisi dan bobot paling ringan di kelasnya.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/mclaren_artura_spider_high_perf_hybrid.jpg'
+    ],
+    [
+        'id' => 42,
+        'kategori_id' => 8,
+        'brand' => 'McLaren',
+        'model' => '765LT Longtail Coupe',
+        'tahun' => 2024,
+        'harga_otr' => 18800000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 755 HP | 800 Nm | 0-100 km/h: 2.7s | Quad Titanium Exhaust | Active Longtail Wing',
+        'deskripsi' => 'Edisi Longtail legendaris dengan bobot terpangkas 80 kg, rasio transmisi balap lebih rapat, dan sayap aktif Longtail khas Woking.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/mclaren_765lt_longtail_coupe.jpg'
+    ],
+    [
+        'id' => 43,
+        'kategori_id' => 8,
+        'brand' => 'McLaren',
+        'model' => 'GT Luxe Grand Tourer',
+        'tahun' => 2025,
+        'harga_otr' => 9500000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 612 HP | 630 Nm | Proactive Damping Control | 570L Cargo Space | Nappa Leather Interior',
+        'deskripsi' => 'Supercar harian dengan ruang kargo bagasi berlapis kulit terluas di kelasnya, memadukan performa McLaren dengan kenyamanan touring.',
+        'stok' => 3,
+        'gambar_utama' => 'assets/images/cars/mclaren_gt_luxe_grand_tourer.jpg'
+    ],
+    [
+        'id' => 9,
+        'kategori_id' => 9,
         'brand' => 'Porsche',
         'model' => '911 GT3 RS (992)',
         'tahun' => 2025,
         'harga_otr' => 11200000000,
-        'spesifikasi' => 'Flat-6 4.0L NA | 518 HP | 9,000 RPM Redline | DRS Aero Wing | PDK 7-Speed',
+        'spesifikasi' => 'Flat-6 4.0L NA | 518 HP | 9,000 RPM Redline | DRS Aero Wing | PDK 7-Speed | Carbon Door & Fenders',
         'deskripsi' => 'Mobil balap sirkuit yang legal digunakan di jalan raya. Dilengkapi sistem aerodinamika aktif DRS.',
         'stok' => 3,
-        'gambar_utama' => 'assets/images/porsche_911_gt3.jpg'
+        'gambar_utama' => 'assets/images/cars/porsche_911_gt3_rs__992_.jpg'
+    ],
+    [
+        'id' => 44,
+        'kategori_id' => 9,
+        'brand' => 'Porsche',
+        'model' => '911 Turbo S Coupe (992)',
+        'tahun' => 2025,
+        'harga_otr' => 12800000000,
+        'spesifikasi' => 'Boxer-6 3.8L Twin-Turbo | 640 HP | 800 Nm | 0-100 km/h: 2.6s | All-Wheel Drive | Ceramic Composite Brakes PCCB',
+        'deskripsi' => 'Tolok ukur performa supercar harian di dunia. Akselerasi roket dari diam dengan stabilitas traksi all-wheel drive tanpa cela.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/porsche_911_turbo_s_coupe__992_.jpg'
+    ],
+    [
+        'id' => 45,
+        'kategori_id' => 9,
+        'brand' => 'Porsche',
+        'model' => 'Taycan Turbo GT Weissach',
+        'tahun' => 2025,
+        'harga_otr' => 10500000000,
+        'spesifikasi' => 'Dual Electric Motors | 1092 HP Attack Mode | 1340 Nm | 0-100 km/h: 2.2s | Carbon Aerokit | EV Nurburgring King',
+        'deskripsi' => 'Mobil listrik 4-pintu tercepat di Nürburgring dan Laguna Seca dengan paket Weissach aerodinamika karbon ultra-ringan.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/porsche_taycan_turbo_gt_weissach.jpg'
+    ],
+    [
+        'id' => 46,
+        'kategori_id' => 9,
+        'brand' => 'Porsche',
+        'model' => '718 Cayman GT4 RS Mid-Engine',
+        'tahun' => 2024,
+        'harga_otr' => 8900000000,
+        'spesifikasi' => 'Mid-Engine Flat-6 4.0L NA | 493 HP | 9000 RPM | Air Intake Side Windows | Titanium Rollcage Option',
+        'deskripsi' => 'Coupe bermesin tengah dengan intake udara tepat di samping telinga pengemudi, menghasilkan sensasi akustik mekanis tak tertandingi.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/porsche_718_cayman_gt4_rs_mid_engine.jpg'
+    ],
+    [
+        'id' => 47,
+        'kategori_id' => 9,
+        'brand' => 'Porsche',
+        'model' => 'Cayenne Turbo E-Hybrid GT',
+        'tahun' => 2025,
+        'harga_otr' => 9400000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo PHEV | 729 HP | 950 Nm | 0-100 km/h: 3.6s | Ceramic Brakes | Titanium Center Exhaust',
+        'deskripsi' => 'SUV terkuat yang pernah diproduksi Porsche dengan paduan mesin V8 biturbo dan motor listrik bertenaga buas.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/porsche_cayenne_turbo_e_hybrid_gt.jpg'
+    ],
+    [
+        'id' => 10,
+        'kategori_id' => 10,
+        'brand' => 'Aston Martin',
+        'model' => 'DB12 Volante Super Tourer',
+        'tahun' => 2026,
+        'harga_otr' => 13500000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 671 HP | 800 Nm | 0-100 km/h: 3.6s | Top Speed: 325 km/h | K-Fold Roof in 14s',
+        'deskripsi' => 'Gran Tourer konvertibel ikonik dari Gaydon. Dikenal sebagai The World\'s Most Beautiful Grand Tourer dengan kemewahan interior bespoke.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/aston_martin_db12_volante.jpg'
+    ],
+    [
+        'id' => 48,
+        'kategori_id' => 10,
+        'brand' => 'Aston Martin',
+        'model' => 'Valkyrie Adrian Newey Hypercar',
+        'tahun' => 2024,
+        'harga_otr' => 52000000000,
+        'spesifikasi' => 'Cosworth V12 6.5L NA + Rimac KERS | 1140 HP | 11100 RPM Redline | Full Venturi Tunnel Underfloor Ground Effect',
+        'deskripsi' => 'Mahakarya aerodinamika dari desainer F1 Adrian Newey. Mesin V12 Cosworth paling tinggi putarannya di dunia untuk mobil jalan raya.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/aston_martin_valkyrie_adrian_newey_hypercar.jpg'
+    ],
+    [
+        'id' => 49,
+        'kategori_id' => 10,
+        'brand' => 'Aston Martin',
+        'model' => 'DBX707 High-Output Luxury SUV',
+        'tahun' => 2025,
+        'harga_otr' => 11200000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 697 HP (707 PS) | 900 Nm | 0-100 km/h: 3.3s | Wet-Clutch 9-Speed | Carbon Ceramic Brakes',
+        'deskripsi' => 'Salah satu SUV termewah dan terkencang di dunia dengan rem Carbon Ceramic standar dan interior bespoke Q by Aston Martin.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/aston_martin_dbx707_high_output_luxury_suv.jpg'
+    ],
+    [
+        'id' => 50,
+        'kategori_id' => 10,
+        'brand' => 'Aston Martin',
+        'model' => 'Vantage F1 Edition Aero',
+        'tahun' => 2025,
+        'harga_otr' => 8800000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 528 HP | 685 Nm | Official FIA F1 Safety Car Dynamics | Full Aero Kit 200kg Downforce',
+        'deskripsi' => 'Edisi spesial yang dikembangkan langsung dari Safety Car Formula 1 resmi dengan sasis lebih kaku dan sayap aerodinamika balap.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/aston_martin_vantage_f1_edition_aero.jpg'
+    ],
+    [
+        'id' => 51,
+        'kategori_id' => 10,
+        'brand' => 'Aston Martin',
+        'model' => 'DBS 770 Ultimate Coupe',
+        'tahun' => 2024,
+        'harga_otr' => 16500000000,
+        'spesifikasi' => 'V12 5.2L Twin-Turbo | 759 HP (770 PS) | 900 Nm | Top Speed: 340 km/h | 1 of 300 Worldwide | Horseshoe Hood Vent',
+        'deskripsi' => 'Perpisahan paling megah untuk generasi DBS V12. Diproduksi terbatas dengan kap mesin clashing horseshoe dan interior sports plus.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/aston_martin_dbs_770_ultimate_coupe.jpg'
+    ],
+    [
+        'id' => 11,
+        'kategori_id' => 11,
+        'brand' => 'Bentley',
+        'model' => 'Continental GT Speed W12',
+        'tahun' => 2025,
+        'harga_otr' => 16800000000,
+        'spesifikasi' => 'W12 6.0L Twin-Turbo | 659 HP | 900 Nm | 0-100 km/h: 3.6s | Top Speed: 335 km/h | Electronic All-Wheel Steering',
+        'deskripsi' => 'Grand tourer terkencang Bentley sepanjang masa. Memadukan kemewahan hand-crafted interior dengan performa supercar kelas dunia.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/bentley_continental_gt_speed_w12.jpg'
+    ],
+    [
+        'id' => 52,
+        'kategori_id' => 11,
+        'brand' => 'Bentley',
+        'model' => 'Bentayga EWB Azure Airline Seat',
+        'tahun' => 2025,
+        'harga_otr' => 14500000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 542 HP | 770 Nm | Airline Seat Specification | 22-Way Adjustment & Postural Massage',
+        'deskripsi' => 'SUV ultra-mewah dengan kabin belakang terlapang di kelasnya, kursi Airline Seat dengan 22 pengaturan dan deteksi postural otomatis.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/bentley_bentayga_ewb_azure_airline_seat.jpg'
+    ],
+    [
+        'id' => 53,
+        'kategori_id' => 11,
+        'brand' => 'Bentley',
+        'model' => 'Flying Spur Mulliner W12',
+        'tahun' => 2025,
+        'harga_otr' => 17900000000,
+        'spesifikasi' => 'W12 6.0L Twin-Turbo | 626 HP | 900 Nm | Mulliner Diamond-in-Diamond Quilting | Illuminated Flying B Mascot',
+        'deskripsi' => 'Sedan flagship 4 pintu karya divisi bespoke Mulliner di Crewe. Menghadirkan trim kayu walnut langka dan emblem Flying B bercahaya.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/bentley_flying_spur_mulliner_w12.jpg'
+    ],
+    [
+        'id' => 54,
+        'kategori_id' => 11,
+        'brand' => 'Bentley',
+        'model' => 'Batur Coachbuilt by Mulliner',
+        'tahun' => 2025,
+        'harga_otr' => 38000000000,
+        'spesifikasi' => 'W12 6.0L Twin-Turbo Hand-Built | 740 HP | 1000 Nm | 1 of 18 Worldwide | 3D-Printed 18K Gold Interior Accents',
+        'deskripsi' => 'Karya seni coachbuilt bespoke Mulliner hanya 18 unit di dunia dengan tombol instrumen emas murni 18 karat cetak 3D.',
+        'stok' => 1,
+        'gambar_utama' => 'assets/images/cars/bentley_batur_coachbuilt_by_mulliner.jpg'
+    ],
+    [
+        'id' => 55,
+        'kategori_id' => 11,
+        'brand' => 'Bentley',
+        'model' => 'Continental GTC V8 S Convertible',
+        'tahun' => 2025,
+        'harga_otr' => 13900000000,
+        'spesifikasi' => 'V8 4.0L Twin-Turbo | 542 HP | 770 Nm | Sport Exhaust with Dark Tint Quads | 48V Active Anti-Roll Dynamic Ride',
+        'deskripsi' => 'Grand tourer atap terbuka dengan raungan knalpot V8 sporty, velg 22 inci black polished, dan suspensi udara dinamis 48V.',
+        'stok' => 2,
+        'gambar_utama' => 'assets/images/cars/bentley_continental_gtc_v8_s_convertible.jpg'
     ]
 ];
 
@@ -137,14 +749,37 @@ switch ($action) {
     case 'get_cars':
         if ($db) {
             try {
-                $stmt = $db->query("SELECT * FROM mobil ORDER BY id DESC");
+                $stmt = $db->query("SELECT COUNT(*) FROM mobil");
+                $dbCount = (int)$stmt->fetchColumn();
+
+                // If DB has fewer than 50 cars, auto-seed with all 55 master cars
+                if ($dbCount < 50) {
+                    $insertStmt = $db->prepare("INSERT INTO mobil (kategori_id, brand, model, tahun, harga_otr, spesifikasi, deskripsi, stok, gambar_utama) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE model=VALUES(model), harga_otr=VALUES(harga_otr), stok=VALUES(stok)");
+                    foreach ($defaultCars as $car) {
+                        try {
+                            $insertStmt->execute([
+                                $car['kategori_id'],
+                                $car['brand'],
+                                $car['model'],
+                                $car['tahun'],
+                                $car['harga_otr'],
+                                $car['spesifikasi'],
+                                $car['deskripsi'],
+                                $car['stok'],
+                                $car['gambar_utama']
+                            ]);
+                        } catch (Exception $e) {}
+                    }
+                }
+
+                $stmt = $db->query("SELECT * FROM mobil ORDER BY id ASC");
                 $cars = $stmt->fetchAll();
-                if (!empty($cars)) {
+                if (!empty($cars) && count($cars) >= 50) {
                     jsonSuccess($cars);
                 }
             } catch (Exception $e) {}
         }
-        jsonSuccess($defaultCars, 'Offline catalog mode');
+        jsonSuccess($defaultCars, 'Offline/Fallback 55-car master catalog');
         break;
 
     case 'save_car':

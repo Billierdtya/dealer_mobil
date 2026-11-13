@@ -29,7 +29,7 @@ let currentCars = [
     spesifikasi: 'W16 8.0L Quad-Turbo | 1600 HP | 1600 Nm | 0-100 km/h: 2.4s | The Ultimate Open-Top Hypercar',
     deskripsi: 'Roadster pamungkas bertenaga W16 legendaris Bugatti. Diproduksi terbatas hanya 99 unit di seluruh dunia.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/bugatti_w16_mistral_roadster.jpg'
   },
   {
     id: 13,
@@ -41,7 +41,7 @@ let currentCars = [
     spesifikasi: 'W16 8.0L Quad-Turbo | 1500 HP | Cornering Specialist | Lateral Accel 1.6G | Downforce +90kg',
     deskripsi: 'Hypercar berkarakter sirkuit dengan aerodinamika agresif dan downforce ekstra dibanding Chiron standar.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/bugatti_divo_cornering_specialist.jpg'
   },
   {
     id: 14,
@@ -53,7 +53,7 @@ let currentCars = [
     spesifikasi: 'W16 8.0L Quad-Turbo | 1850 HP | Weight: 1240 kg | 0.67 kg/HP | FIA Le Mans Safety Standards',
     deskripsi: 'Monster trek tanpa kompromi dengan rasio bobot tenaga 0.67 kg per HP dan transmisi balap FIA Le Mans.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/bugatti_bolide_track_only_megacar.jpg'
   },
   {
     id: 15,
@@ -65,7 +65,7 @@ let currentCars = [
     spesifikasi: 'V16 8.3L Cosworth NA + 3 Motors | 1800 HP | 0-100 km/h: 2.0s | Horology-Inspired Cockpit',
     deskripsi: 'Era baru hypercar Bugatti dengan instrumen analog karya pembuat jam tangan Swiss dan mesin naturally aspirated V16 Cosworth.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/bugatti_tourbillon_v16_hybrid.jpg'
   },
 
   // ── PAGANI (kategori_id: 2) ──
@@ -91,7 +91,7 @@ let currentCars = [
     spesifikasi: 'Mercedes-AMG V12 6.0L Twin-Turbo | 864 HP | 1100 Nm | 7-Speed Gated Manual Transverse',
     deskripsi: 'Karya seni purist Horacio Pagani yang menolak elektrifikasi, menghadirkan tuas transmisi manual terbuka yang mempesona.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1647413554479-7df9fcebeab8?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/pagani_utopia_gated_manual_coupe.jpg'
   },
   {
     id: 17,
@@ -103,7 +103,7 @@ let currentCars = [
     spesifikasi: 'V12-R 6.0L Naturally Aspirated | 850 HP | 9000 RPM | Weight 1050 kg | Inconel Exhaust Symphonic',
     deskripsi: 'Mobil trek bertenaga V12 atmosferik dengan suara knalpot bernada Formula 1 era 1990-an dan bobot hanya 1050 kg.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1608821946397-f6556156cebb?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/pagani_huayra_r_track_pure_v12.jpg'
   },
   {
     id: 18,
@@ -115,7 +115,7 @@ let currentCars = [
     spesifikasi: 'AMG V12 7.3L NA | 678 HP | 780 Nm | 1 of 5 Worldwide | Carbo-Titanium Monocoque | Roof-Scoop Aero',
     deskripsi: 'Salah satu Zonda paling langka dan dicari kolektor dunia. Hanya ada 5 unit di dunia dengan aerodinamika atap roof-scoop.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/pagani_zonda_cinque_roadster.jpg'
   },
   {
     id: 19,
@@ -127,7 +127,7 @@ let currentCars = [
     spesifikasi: 'Mercedes-AMG V12 Twin-Turbo | 850 HP | 1100 Nm | Extreme Ground Effect Aero | Limited 8 Units',
     deskripsi: 'Laboratorium berjalan Pagani yang diuji di Sirkuit Imola dengan downforce ekstrem dan teknologi suspensi aktif tercanggih.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/pagani_imola_roadster_aero_lab.jpg'
   },
 
   // ── KOENIGSEGG (kategori_id: 3) ──
@@ -153,7 +153,7 @@ let currentCars = [
     spesifikasi: 'HV8 5.0L Twin-Turbo Hybrid | 2300 HP | 2750 Nm | 4-Seater Mega-GT | All-Wheel Drive & Steering',
     deskripsi: 'Megacar 4 penumpang pertama di dunia dengan pintu dihedral autoskin dan tenaga fantastis 2300 horsepower.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1616782298751-24bb688e1462?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/koenigsegg_gemera_4_seater_megacar.jpg'
   },
   {
     id: 21,
@@ -165,7 +165,7 @@ let currentCars = [
     spesifikasi: 'V8 5.0L Twin-Turbo | 1385 HP | 1385 kg (1:1 Ratio) | Engage Shift System (ESS) Dual-Mode Gated Manual',
     deskripsi: 'Penghormatan 20 tahun CC8S dengan teknologi revolusioner transmisi manual simulasi dengan kopling fisik asli.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1608821946397-f6556156cebb?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/koenigsegg_cc850_ess_shift_by_wire.jpg'
   },
   {
     id: 22,
@@ -177,7 +177,7 @@ let currentCars = [
     spesifikasi: 'V8 5.0L Twin-Turbo | 1600 HP | 1400 kg Downforce | Active Rear Wing | Triplex Damper Suspension',
     deskripsi: 'Varian Jesko yang dioptimalkan untuk lap time sirkuit dengan sayap ganda raksasa dan triplex damper suspension.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/koenigsegg_jesko_attack_high_downforce.jpg'
   },
   {
     id: 23,
@@ -189,7 +189,7 @@ let currentCars = [
     spesifikasi: 'V8 5.0L Twin-Turbo + Direct Drive | 1500 HP | 2000 Nm | 0-400-0 km/h: 28.8s | Autoskin Hydraulic Doors',
     deskripsi: 'Megacar revolusioner tanpa gearbox (Koenigsegg Direct Drive) dengan sistem hidrolik robotik Autoskin di seluruh pintu.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/koenigsegg_regera_directdrive_ghost.jpg'
   },
 
   // ── FERRARI (kategori_id: 4) ──
@@ -203,7 +203,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo Plug-in Hybrid | 986 HP | 0-100 km/h: 2.5s | Top Speed: 340 km/h | eAWD System',
     deskripsi: 'Hypercar hybrid buatan Maranello dengan akselerasi instan dan downforce tingkat balap balap Formula 1.',
     stok: 1,
-    gambar_utama: 'assets/images/ferrari_sf90.jpg'
+    gambar_utama: 'assets/images/cars/ferrari_sf90_stradale_assetto_fiorano.jpg'
   },
   {
     id: 24,
@@ -215,7 +215,7 @@ let currentCars = [
     spesifikasi: 'V12 6.5L Naturally Aspirated | 715 HP | 716 Nm | 0-100 km/h: 3.3s | Multimatic Active Suspension',
     deskripsi: 'SUV empat pintu pertama dalam sejarah Ferrari dengan mesin naturally aspirated V12 murni dan suspensi aktif Multimatic.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1632245889029-e406faaa34cd?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/ferrari_purosangue_suv_v12.jpg'
   },
   {
     id: 25,
@@ -227,7 +227,7 @@ let currentCars = [
     spesifikasi: 'V6 3.0L 120° Twin-Turbo PHEV | 819 HP | 740 Nm | 0-100 km/h: 2.9s | Top Speed: 330 km/h',
     deskripsi: 'Piccolo V12 berlinetta bermesin tengah dengan efisiensi plug-in hybrid dan kelincahan berkendara legendaris.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/ferrari_296_gtb_assetto_fiorano.jpg'
   },
   {
     id: 26,
@@ -239,7 +239,7 @@ let currentCars = [
     spesifikasi: 'V12 6.5L Naturally Aspirated | 819 HP | 9500 RPM | Independent 4-Wheel Steering | Carbon Wheels',
     deskripsi: 'Edisi terbatas front-mid V12 paling bertenaga yang pernah dibuat di Maranello dengan putaran mesin hingga 9.500 RPM.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/ferrari_812_competizione_v12.jpg'
   },
   {
     id: 27,
@@ -251,7 +251,7 @@ let currentCars = [
     spesifikasi: 'V8 3.9L Twin-Turbo | 612 HP | 760 Nm | 0-100 km/h: 3.4s | Soft-Top Convertible 5-Layer Fabric',
     deskripsi: 'Kembalinya era La Nuova Dolce Vita dengan atap kain elegan 5 lapis yang dapat dibuka dalam 13.5 detik pada kecepatan 60 km/h.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/ferrari_roma_spider_dolce_vita.jpg'
   },
 
   // ── LAMBORGHINI (kategori_id: 5) ──
@@ -265,7 +265,7 @@ let currentCars = [
     spesifikasi: 'V12 6.5L Naturally Aspirated + 3 Electric Motors | 1001 HP | 0-100 km/h: 2.5s | Monofuselage Carbon',
     deskripsi: 'Supercar V12 hybrid pertama dari Sant\'Agata Bolognese. Desain futuristik dengan performa tanpa batas.',
     stok: 1,
-    gambar_utama: 'assets/images/lamborghini_revuelto.jpg'
+    gambar_utama: 'assets/images/cars/lamborghini_revuelto_v12_hybrid.jpg'
   },
   {
     id: 28,
@@ -277,7 +277,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo | 657 HP | 850 Nm | 0-100 km/h: 3.3s | Akrapovic Titanium Exhaust | Rally Mode',
     deskripsi: 'Super SUV pemecah rekor Pikes Peak dengan kap mesin serat karbon, knalpot titanium Akrapovic, dan mode berkendara Rally.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/lamborghini_urus_performante_super_suv.jpg'
   },
   {
     id: 29,
@@ -289,7 +289,7 @@ let currentCars = [
     spesifikasi: 'V10 5.2L Naturally Aspirated | 631 HP | 565 Nm | RWD | Cofango One-Piece Hood | 75% Carbon Fiber',
     deskripsi: 'Mobil balap homologasi jalan raya dengan bodi 75% serat karbon dan pendinginan aerodinamika Squadra Corse.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/lamborghini_huracan_sto_super_trofeo.jpg'
   },
   {
     id: 30,
@@ -301,7 +301,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo + 3 Motors | 907 HP | 10000 RPM Redline | High-Revving Flat-Plane Crank',
     deskripsi: 'Penerus resmi Huracán dengan mesin flat-plane crank baru yang sanggup berputar hingga 10.000 RPM fantastis.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/lamborghini_temerario_v8_twin_turbo.jpg'
   },
   {
     id: 31,
@@ -313,7 +313,7 @@ let currentCars = [
     spesifikasi: 'V12 6.5L + Supercapacitor Hybrid | 808 HP | 0-100 km/h: 2.8s | 1 of 19 Worldwide | Terzo Millennio Aero',
     deskripsi: 'Hypercar superkapasitor pertama di dunia berdesain radikal Terzo Millennio. Hanya diproduksi 19 unit di seluruh dunia.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1608821946397-f6556156cebb?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/lamborghini_sian_fkp_37_roadster.jpg'
   },
 
   // ── MERCEDES (kategori_id: 6) ──
@@ -339,7 +339,7 @@ let currentCars = [
     spesifikasi: 'V12 6.0L Biturbo | 621 HP | 900 Nm | 4MATIC | Burmester 4D Audio | First-Class Rear Suite',
     deskripsi: 'Puncak kemewahan sedan eksekutif Jerman dengan cat two-tone artisan, sistem audio Burmester 4D, dan pintu belakang elektrik.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/mercedes_maybach_s_class_s680_v12.jpg'
   },
   {
     id: 33,
@@ -351,7 +351,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Biturbo | 577 HP | 850 Nm | Portal Axles | Ground Clearance 351mm | 22" Forged Wheels',
     deskripsi: 'SUV segala medan paling perkasa dengan gardan portal tinggi, velg forged 22 inci, dan kemampuan menerjang banjir 91 cm.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/mercedes_amg_g_63_4x4_squared.jpg'
   },
   {
     id: 34,
@@ -363,7 +363,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Biturbo | 577 HP | 800 Nm | 0-100 km/h: 3.6s | Composite Aluminum Chassis | 2+2 Seats',
     deskripsi: 'Roadster sport ikonik generasi terbaru dengan arsitektur komposit aluminium ringan dan sistem all-wheel drive cerdas.',
     stok: 3,
-    gambar_utama: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/mercedes_amg_sl_63_4matic_roadster.jpg'
   },
   {
     id: 35,
@@ -375,7 +375,7 @@ let currentCars = [
     spesifikasi: 'V6 1.6L Turbo F1 + 4 Electric Motors | 1049 HP | 11000 RPM Redline | Mercedes-AMG Petronas F1 Tech',
     deskripsi: 'Hypercar sejati bermesin Formula 1 langsung dari tim Mercedes-AMG Petronas F1 dengan rekor lap time Nürburgring Nordschleife.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1608821946397-f6556156cebb?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/mercedes_amg_one_formula_1_hypercar.jpg'
   },
 
   // ── ROLLS-ROYCE (kategori_id: 7) ──
@@ -389,7 +389,7 @@ let currentCars = [
     spesifikasi: 'V12 6.75L Twin-Turbo | 563 HP | 900 Nm | 0-100 km/h: 5.4s | Starlight Headliner | Whisper Quiet Cabin',
     deskripsi: 'Standard emas kemewahan dunia otomotif. Menyajikan kenyamanan tiada tanding dengan peredaman suara kabin tingkat tertinggi.',
     stok: 2,
-    gambar_utama: 'assets/images/rolls_royce_phantom.jpg'
+    gambar_utama: 'assets/images/cars/rolls_royce_phantom_viii_extended.jpg'
   },
   {
     id: 36,
@@ -401,7 +401,7 @@ let currentCars = [
     spesifikasi: 'V12 6.75L Twin-Turbo | 600 HP | 900 Nm | Air Suspension | Viewing Suite Luggage Seats | All-Wheel Drive',
     deskripsi: 'SUV termewah di dunia dengan paket Black Badge berkarakter misterius, kursi Viewing Suite di bagasi, dan Starlight roof.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/rolls_royce_cullinan_black_badge_suv.jpg'
   },
   {
     id: 37,
@@ -413,7 +413,7 @@ let currentCars = [
     spesifikasi: 'Dual Electric Motors | 577 HP | 900 Nm | 0-100 km/h: 4.5s | Drag Coeff 0.25cd | Illuminated Fascia 5500 Stars',
     deskripsi: 'Super-coupe listrik ultra-mewah pertama Rolls-Royce dengan koefisien drag 0.25cd dan Illuminated Fascia berisi 5.500 bintang.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1508210331008-5d2bc5038c64?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/rolls_royce_spectre_electric_coupe.jpg'
   },
   {
     id: 38,
@@ -425,7 +425,7 @@ let currentCars = [
     spesifikasi: 'V12 6.75L Twin-Turbo | 563 HP | 850 Nm | Planar Suspension System | Post-Opulence Pure Architecture',
     deskripsi: 'Sedan kemewahan modern dengan filosofi Post-Opulence, pintu buka tutup otomatis elektrik, dan peredam suspensi wishbone atas.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/rolls_royce_ghost_extended_series_ii.jpg'
   },
   {
     id: 39,
@@ -437,7 +437,7 @@ let currentCars = [
     spesifikasi: 'V12 6.6L Twin-Turbo | 593 HP | 840 Nm | The Silent Drophead Tourer | Acoustic French-Seam Soft Top',
     deskripsi: 'Konvertibel paling senyap di dunia saat atap ditutup, menyajikan kenikmatan berkendara grand touring tanpa gangguan suara angin.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/rolls_royce_dawn_black_badge_convertible.jpg'
   },
 
   // ── MCLAREN (kategori_id: 8) ──
@@ -463,7 +463,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo | 789 HP | 800 Nm | 800 kg Downforce | Carbon MonoCage III | 1 of 500 Worldwide',
     deskripsi: 'Dinamai untuk mengenang legenda F1 Ayrton Senna. Fokus mutlak pada lap time tercepat tanpa kompromi.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/mclaren_senna_ultimate_track_weapon.jpg'
   },
   {
     id: 41,
@@ -475,7 +475,7 @@ let currentCars = [
     spesifikasi: 'V6 3.0L 120° Twin-Turbo PHEV | 690 HP | 720 Nm | 0-100 km/h: 3.0s | Carbon Lightweight Architecture MCLA',
     deskripsi: 'High-performance hybrid convertible pertama McLaren dengan handling presisi dan bobot paling ringan di kelasnya.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/mclaren_artura_spider_high_perf_hybrid.jpg'
   },
   {
     id: 42,
@@ -487,7 +487,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo | 755 HP | 800 Nm | 0-100 km/h: 2.7s | Quad Titanium Exhaust | Active Longtail Wing',
     deskripsi: 'Edisi Longtail legendaris dengan bobot terpangkas 80 kg, rasio transmisi balap lebih rapat, dan sayap aktif Longtail khas Woking.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/mclaren_765lt_longtail_coupe.jpg'
   },
   {
     id: 43,
@@ -499,7 +499,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo | 612 HP | 630 Nm | Proactive Damping Control | 570L Cargo Space | Nappa Leather Interior',
     deskripsi: 'Supercar harian dengan ruang kargo bagasi berlapis kulit terluas di kelasnya, memadukan performa McLaren dengan kenyamanan touring.',
     stok: 3,
-    gambar_utama: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/mclaren_gt_luxe_grand_tourer.jpg'
   },
 
   // ── PORSCHE (kategori_id: 9) ──
@@ -513,7 +513,7 @@ let currentCars = [
     spesifikasi: 'Flat-6 4.0L NA | 518 HP | 9,000 RPM Redline | DRS Aero Wing | PDK 7-Speed | Carbon Door & Fenders',
     deskripsi: 'Mobil balap sirkuit yang legal digunakan di jalan raya. Dilengkapi sistem aerodinamika aktif DRS.',
     stok: 3,
-    gambar_utama: 'assets/images/porsche_911_gt3.jpg'
+    gambar_utama: 'assets/images/cars/porsche_911_gt3_rs__992_.jpg'
   },
   {
     id: 44,
@@ -525,7 +525,7 @@ let currentCars = [
     spesifikasi: 'Boxer-6 3.8L Twin-Turbo | 640 HP | 800 Nm | 0-100 km/h: 2.6s | All-Wheel Drive | Ceramic Composite Brakes PCCB',
     deskripsi: 'Tolok ukur performa supercar harian di dunia. Akselerasi roket dari diam dengan stabilitas traksi all-wheel drive tanpa cela.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/porsche_911_turbo_s_coupe__992_.jpg'
   },
   {
     id: 45,
@@ -537,7 +537,7 @@ let currentCars = [
     spesifikasi: 'Dual Electric Motors | 1092 HP Attack Mode | 1340 Nm | 0-100 km/h: 2.2s | Carbon Aerokit | EV Nurburgring King',
     deskripsi: 'Mobil listrik 4-pintu tercepat di Nürburgring dan Laguna Seca dengan paket Weissach aerodinamika karbon ultra-ringan.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/porsche_taycan_turbo_gt_weissach.jpg'
   },
   {
     id: 46,
@@ -549,7 +549,7 @@ let currentCars = [
     spesifikasi: 'Mid-Engine Flat-6 4.0L NA | 493 HP | 9000 RPM | Air Intake Side Windows | Titanium Rollcage Option',
     deskripsi: 'Coupe bermesin tengah dengan intake udara tepat di samping telinga pengemudi, menghasilkan sensasi akustik mekanis tak tertandingi.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/porsche_718_cayman_gt4_rs_mid_engine.jpg'
   },
   {
     id: 47,
@@ -561,7 +561,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo PHEV | 729 HP | 950 Nm | 0-100 km/h: 3.6s | Ceramic Brakes | Titanium Center Exhaust',
     deskripsi: 'SUV terkuat yang pernah diproduksi Porsche dengan paduan mesin V8 biturbo dan motor listrik bertenaga buas.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/porsche_cayenne_turbo_e_hybrid_gt.jpg'
   },
 
   // ── ASTON MARTIN (kategori_id: 10) ──
@@ -587,7 +587,7 @@ let currentCars = [
     spesifikasi: 'Cosworth V12 6.5L NA + Rimac KERS | 1140 HP | 11100 RPM Redline | Full Venturi Tunnel Underfloor Ground Effect',
     deskripsi: 'Mahakarya aerodinamika dari desainer F1 Adrian Newey. Mesin V12 Cosworth paling tinggi putarannya di dunia untuk mobil jalan raya.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1608821946397-f6556156cebb?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/aston_martin_valkyrie_adrian_newey_hypercar.jpg'
   },
   {
     id: 49,
@@ -599,7 +599,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo | 697 HP (707 PS) | 900 Nm | 0-100 km/h: 3.3s | Wet-Clutch 9-Speed | Carbon Ceramic Brakes',
     deskripsi: 'Salah satu SUV termewah dan terkencang di dunia dengan rem Carbon Ceramic standar dan interior bespoke Q by Aston Martin.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/aston_martin_dbx707_high_output_luxury_suv.jpg'
   },
   {
     id: 50,
@@ -611,7 +611,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo | 528 HP | 685 Nm | Official FIA F1 Safety Car Dynamics | Full Aero Kit 200kg Downforce',
     deskripsi: 'Edisi spesial yang dikembangkan langsung dari Safety Car Formula 1 resmi dengan sasis lebih kaku dan sayap aerodinamika balap.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/aston_martin_vantage_f1_edition_aero.jpg'
   },
   {
     id: 51,
@@ -623,7 +623,7 @@ let currentCars = [
     spesifikasi: 'V12 5.2L Twin-Turbo | 759 HP (770 PS) | 900 Nm | Top Speed: 340 km/h | 1 of 300 Worldwide | Horseshoe Hood Vent',
     deskripsi: 'Perpisahan paling megah untuk generasi DBS V12. Diproduksi terbatas dengan kap mesin clashing horseshoe dan interior sports plus.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/aston_martin_dbs_770_ultimate_coupe.jpg'
   },
 
   // ── BENTLEY (kategori_id: 11) ──
@@ -649,7 +649,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo | 542 HP | 770 Nm | Airline Seat Specification | 22-Way Adjustment & Postural Massage',
     deskripsi: 'SUV ultra-mewah dengan kabin belakang terlapang di kelasnya, kursi Airline Seat dengan 22 pengaturan dan deteksi postural otomatis.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/bentley_bentayga_ewb_azure_airline_seat.jpg'
   },
   {
     id: 53,
@@ -661,7 +661,7 @@ let currentCars = [
     spesifikasi: 'W12 6.0L Twin-Turbo | 626 HP | 900 Nm | Mulliner Diamond-in-Diamond Quilting | Illuminated Flying B Mascot',
     deskripsi: 'Sedan flagship 4 pintu karya divisi bespoke Mulliner di Crewe. Menghadirkan trim kayu walnut langka dan emblem Flying B bercahaya.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/bentley_flying_spur_mulliner_w12.jpg'
   },
   {
     id: 54,
@@ -673,7 +673,7 @@ let currentCars = [
     spesifikasi: 'W12 6.0L Twin-Turbo Hand-Built | 740 HP | 1000 Nm | 1 of 18 Worldwide | 3D-Printed 18K Gold Interior Accents',
     deskripsi: 'Karya seni coachbuilt bespoke Mulliner hanya 18 unit di dunia dengan tombol instrumen emas murni 18 karat cetak 3D.',
     stok: 1,
-    gambar_utama: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/bentley_batur_coachbuilt_by_mulliner.jpg'
   },
   {
     id: 55,
@@ -685,7 +685,7 @@ let currentCars = [
     spesifikasi: 'V8 4.0L Twin-Turbo | 542 HP | 770 Nm | Sport Exhaust with Dark Tint Quads | 48V Active Anti-Roll Dynamic Ride',
     deskripsi: 'Grand tourer atap terbuka dengan raungan knalpot V8 sporty, velg 22 inci black polished, dan suspensi udara dinamis 48V.',
     stok: 2,
-    gambar_utama: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    gambar_utama: 'assets/images/cars/bentley_continental_gtc_v8_s_convertible.jpg'
   }
 ];
 
@@ -940,6 +940,7 @@ function submitContactForm(e) {
 // DOM Loaded Initialization
 document.addEventListener('DOMContentLoaded', () => {
   fetchCars();
+  renderFeaturedGridFallback();
   initCalculator();
   setupEventListeners();
   updateAdminTables();
@@ -977,11 +978,18 @@ async function fetchCars() {
   try {
     const response = await fetch('api.php?action=get_cars');
     const result = await response.json();
-    if (result.status === 'success' && result.data.length > 0) {
+    if (result.status === 'success' && Array.isArray(result.data) && result.data.length >= 50) {
       currentCars = result.data;
+    } else if (result.status === 'success' && Array.isArray(result.data) && result.data.length > 0) {
+      // If API returns fewer than 50 cars, merge with master 55 cars so catalog never shrinks
+      const apiMap = new Map(result.data.map(c => [String(c.brand).toLowerCase() + ' ' + String(c.model).toLowerCase(), c]));
+      currentCars = currentCars.map(car => {
+        const key = String(car.brand).toLowerCase() + ' ' + String(car.model).toLowerCase();
+        return apiMap.get(key) || car;
+      });
     }
   } catch (err) {
-    console.log('Using local client cars data');
+    console.log('Using local client cars data (55 cars)');
   }
   renderCatalog();
   populateCalculatorSelect();
@@ -990,6 +998,17 @@ async function fetchCars() {
 // Render Catalog Cards
 // Render Catalog Cards with Multi-Faceted Filters & Sorting
 function renderCatalog() {
+  // Hydrate Homepage Stats if elements exist
+  const elStatCars = document.getElementById('statTotalCars');
+  const elStatBrands = document.getElementById('statTotalBrands');
+  if (elStatCars && Array.isArray(currentCars) && currentCars.length > 0) {
+    elStatCars.textContent = currentCars.length;
+  }
+  if (elStatBrands && Array.isArray(currentCars) && currentCars.length > 0) {
+    const brandSet = new Set(currentCars.map(c => c.brand));
+    elStatBrands.textContent = brandSet.size;
+  }
+
   const container = document.getElementById('catalogGrid');
   if (!container) return;
 
@@ -2283,6 +2302,18 @@ function submitTestDriveForm(e) {
     });
   } catch (err) {}
 
+    // Auto-session TD
+  if (!getLoggedInUser()) {
+    localStorage.setItem('pcsUser', JSON.stringify({
+      id: Date.now(),
+      nama: name,
+      email: email,
+      phone: phone,
+      role: 'user'
+    }));
+    updateNavbarAuth();
+  }
+
   showToast(`Test drive ${bookingId} dijadwalkan! Lihat statusnya di tab Aktivitas.`);
   setTimeout(() => {
     openMyBookingsModal('testdrive');
@@ -2373,6 +2404,18 @@ function submitSellCarForm(e) {
     });
   } catch (err) {}
 
+    // Auto-session Sell
+  if (!getLoggedInUser()) {
+    localStorage.setItem('pcsUser', JSON.stringify({
+      id: Date.now(),
+      nama: ownerName,
+      email: ownerEmail || 'user@luxury.com',
+      phone: ownerPhone,
+      role: 'user'
+    }));
+    updateNavbarAuth();
+  }
+
   showToast(`Pengajuan titip jual ${sellId} berhasil dikirim! Tim kami akan menginspeksi dalam 48 jam.`);
   setTimeout(() => {
     openMyBookingsModal('sell');
@@ -2456,6 +2499,18 @@ function submitContactUsForm(e) {
       body: JSON.stringify(newMsg)
     });
   } catch (err) {}
+
+    // Auto-session Contact
+  if (!getLoggedInUser()) {
+    localStorage.setItem('pcsUser', JSON.stringify({
+      id: Date.now(),
+      nama: name,
+      email: email || 'user@luxury.com',
+      phone: phone,
+      role: 'user'
+    }));
+    updateNavbarAuth();
+  }
 
   showToast(`Pesan terkirim (${ticketId})! Tim concierge kami akan merespons dalam 24 jam.`);
   setTimeout(() => {
@@ -2618,6 +2673,18 @@ async function submitCustomerServiceBooking(e) {
   if (rcptType) rcptType.innerText = srvType.replace('_', ' ').toUpperCase();
   if (rcptSchedule) rcptSchedule.innerText = `${date} @ ${time}`;
   if (rcptCost) rcptCost.innerText = formatIDR(rate.jasa + rate.parts);
+
+    // Auto-session Srv
+  if (!getLoggedInUser()) {
+    localStorage.setItem('pcsUser', JSON.stringify({
+      id: Date.now(),
+      nama: name,
+      email: email || 'user@luxury.com',
+      phone: phone,
+      role: 'user'
+    }));
+    updateNavbarAuth();
+  }
 
   openModal('serviceSuccessModal');
   showToast(`Booking servis ${bookingCode} berhasil didaftarkan!`);
@@ -3305,3 +3372,28 @@ document.addEventListener('click', (e) => {
     closeModal(e.target.id);
   }
 });
+
+
+function renderFeaturedGridFallback() {
+  const fg = document.getElementById('featuredGrid');
+  if (!fg) return;
+  if (fg.innerHTML.includes('No featured cars available') || fg.children.length === 0) {
+    const top6 = [...currentCars].sort((a, b) => b.harga_otr - a.harga_otr).slice(0, 6);
+    fg.innerHTML = top6.map(car => `
+      <div class="car-card fade-in" onclick="openDetailModal(${car.id})">
+        <div class="car-card-img-wrap">
+          <div class="card-badge">Featured</div>
+          <button class="card-favorite php-favorite-btn" data-id="${car.id}" onclick="event.stopPropagation(); toggleFavorite(${car.id}, this)">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <img src="${car.gambar_utama}" alt="${car.brand} ${car.model}" class="car-card-img" loading="lazy" onerror="this.src='assets/images/logo_pcs.png'">
+        </div>
+        <div class="car-card-body">
+          <div class="car-card-price">Rp ${Number(car.harga_otr).toLocaleString('id-ID')}</div>
+          <h3 class="car-card-title">${car.tahun} ${car.brand} ${car.model}</h3>
+          <p class="car-card-specs">${car.spesifikasi ? car.spesifikasi.split('|')[0].trim() : ''}</p>
+        </div>
+      </div>
+    `).join('');
+  }
+}

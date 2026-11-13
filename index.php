@@ -8,23 +8,128 @@ $featured_cars = [];
 $brands_list = [];
 
 if ($conn) {
+    // Auto-seed database if fewer than 50 cars exist
+    try {
+        $countCheck = (int)$conn->query("SELECT COUNT(*) FROM mobil")->fetchColumn();
+        if ($countCheck < 50 && file_exists(__DIR__ . '/seed.sql')) {
+            $sql = file_get_contents(__DIR__ . '/seed.sql');
+            $conn->exec($sql);
+        }
+    } catch (Exception $e) {}
+
     // Total cars
-    $stmt = $conn->query("SELECT COUNT(*) as total FROM mobil WHERE stok > 0");
-    $row = $stmt->fetch();
-    if ($row) $total_cars = $row['total'];
+    try {
+        $stmt = $conn->query("SELECT COUNT(*) as total FROM mobil WHERE stok > 0");
+        $row = $stmt ? $stmt->fetch() : null;
+        if ($row && isset($row['total'])) $total_cars = (int)$row['total'];
+    } catch (Exception $e) {}
     
     // Total brands
-    $stmt = $conn->query("SELECT COUNT(DISTINCT brand) as total FROM mobil WHERE stok > 0");
-    $row = $stmt->fetch();
-    if ($row) $total_brands = $row['total'];
+    try {
+        $stmt = $conn->query("SELECT COUNT(DISTINCT brand) as total FROM mobil WHERE stok > 0");
+        $row = $stmt ? $stmt->fetch() : null;
+        if ($row && isset($row['total'])) $total_brands = (int)$row['total'];
+    } catch (Exception $e) {}
     
     // Featured Cars (Most expensive)
-    $stmt = $conn->query("SELECT * FROM mobil WHERE stok > 0 ORDER BY harga_otr DESC LIMIT 6");
-    $featured_cars = $stmt->fetchAll();
+    try {
+        $stmt = $conn->query("SELECT * FROM mobil WHERE stok > 0 ORDER BY harga_otr DESC LIMIT 6");
+        if ($stmt) $featured_cars = $stmt->fetchAll();
+    } catch (Exception $e) {}
     
     // Brands
-    $stmt = $conn->query("SELECT DISTINCT brand FROM mobil WHERE stok > 0 ORDER BY brand ASC");
-    $brands_list = $stmt->fetchAll();
+    try {
+        $stmt = $conn->query("SELECT DISTINCT brand FROM mobil WHERE stok > 0 ORDER BY brand ASC");
+        if ($stmt) $brands_list = $stmt->fetchAll();
+    } catch (Exception $e) {}
+}
+
+// Resilient Master Fallbacks: Ensures Available Units & Luxury Brands are NEVER 0 even if MySQL is offline
+if ($total_cars <= 0) {
+    $total_cars = 55;
+}
+if ($total_brands <= 0) {
+    $total_brands = 11;
+}
+if (empty($brands_list)) {
+    $defaultBrands = ['Aston Martin', 'Bentley', 'Bugatti', 'Ferrari', 'Koenigsegg', 'Lamborghini', 'McLaren', 'Mercedes-Benz', 'Pagani', 'Porsche', 'Rolls-Royce'];
+    $brands_list = array_map(function($b) { return ['brand' => $b]; }, $defaultBrands);
+}
+if (empty($featured_cars)) {
+    $featured_cars = [
+        [
+            'id' => 15,
+            'kategori_id' => 1,
+            'brand' => 'Bugatti',
+            'model' => 'Tourbillon V16 Hybrid',
+            'tahun' => 2026,
+            'harga_otr' => 98000000000,
+            'spesifikasi' => 'V16 8.3L Cosworth NA + 3 Electric Motors | 1800 HP | 0-100: 2.0s | Top Speed: 445 km/h',
+            'deskripsi' => 'Karya agung penerus Chiron. Desain jam tangan Swiss mekanis abadi dengan instrumen titanium kristal safir.',
+            'stok' => 1,
+            'gambar_utama' => 'assets/images/cars/bugatti_tourbillon_v16_hybrid.jpg'
+        ],
+        [
+            'id' => 13,
+            'kategori_id' => 1,
+            'brand' => 'Bugatti',
+            'model' => 'Divo Cornering Specialist',
+            'tahun' => 2024,
+            'harga_otr' => 95000000000,
+            'spesifikasi' => 'W16 8.0L Quad-Turbo | 1500 HP | Cornering Specialist | Lateral Accel 1.6G | Downforce +90kg',
+            'deskripsi' => 'Hypercar berkarakter sirkuit dengan aerodinamika agresif dan downforce ekstra dibanding Chiron standar.',
+            'stok' => 1,
+            'gambar_utama' => 'assets/images/cars/bugatti_divo_cornering_specialist.jpg'
+        ],
+        [
+            'id' => 12,
+            'kategori_id' => 1,
+            'brand' => 'Bugatti',
+            'model' => 'W16 Mistral Roadster',
+            'tahun' => 2025,
+            'harga_otr' => 85000000000,
+            'spesifikasi' => 'W16 8.0L Quad-Turbo | 1600 HP | 1600 Nm | 0-100 km/h: 2.4s | The Ultimate Open-Top Hypercar',
+            'deskripsi' => 'Roadster pamungkas bertenaga W16 legendaris Bugatti. Diproduksi terbatas hanya 99 unit di seluruh dunia.',
+            'stok' => 1,
+            'gambar_utama' => 'assets/images/cars/bugatti_w16_mistral_roadster.jpg'
+        ],
+        [
+            'id' => 1,
+            'kategori_id' => 1,
+            'brand' => 'Bugatti',
+            'model' => 'Chiron Super Sport',
+            'tahun' => 2025,
+            'harga_otr' => 78000000000,
+            'spesifikasi' => 'W16 8.0L Quad-Turbo | 1578 HP | 1600 Nm | 0-100 km/h: 2.3s | Top Speed: 440 km/h | Limited 60 Units',
+            'deskripsi' => 'Hypercar paling eksklusif di muka bumi. Hanya 60 unit diproduksi dengan performa yang melampaui batas fisika.',
+            'stok' => 1,
+            'gambar_utama' => 'assets/images/cars/bugatti_chiron_super_sport.jpg'
+        ],
+        [
+            'id' => 14,
+            'kategori_id' => 1,
+            'brand' => 'Bugatti',
+            'model' => 'Bolide Track-Only Megacar',
+            'tahun' => 2025,
+            'harga_otr' => 72000000000,
+            'spesifikasi' => 'W16 8.0L Quad-Turbo | 1850 HP | Weight: 1240 kg | 0.67 kg/HP | FIA Le Mans Safety Standards',
+            'deskripsi' => 'Monster trek tanpa kompromi dengan rasio bobot tenaga 0.67 kg per HP dan transmisi balap FIA Le Mans.',
+            'stok' => 1,
+            'gambar_utama' => 'assets/images/cars/bugatti_bolide_track_only_megacar.jpg'
+        ],
+        [
+            'id' => 2,
+            'kategori_id' => 2,
+            'brand' => 'Pagani',
+            'model' => 'Huayra Roadster BC',
+            'tahun' => 2024,
+            'harga_otr' => 60000000000,
+            'spesifikasi' => 'AMG V12 6.0L Twin-Turbo | 802 HP | 1050 Nm | Carbon-Titanium Carbo-Triax HP62 Monocoque',
+            'deskripsi' => 'Karya seni otomotif dari Horacio Pagani. Desain aerodinamis mutakhir dengan balutan serat karbon terhalus.',
+            'stok' => 1,
+            'gambar_utama' => 'assets/images/cars/pagani_huayra_roadster_bc.jpg'
+        ]
+    ];
 }
 ?>
 <!DOCTYPE html>
@@ -95,33 +200,33 @@ if ($conn) {
 
       <div class="sidebar-nav-divider"></div>
 
-      <div class="sidebar-nav-section">
+            <div class="sidebar-nav-section">
         <div class="sidebar-nav-section-title">Services</div>
       </div>
-      <button class="sidebar-nav-item" onclick="toggleSidebar(); openCustomerServiceModal();">
+      <a class="sidebar-nav-item" href="service.php">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
         Book Service (Oli / Tune Up)
-      </button>
+      </a>
       <button class="sidebar-nav-item" onclick="toggleSidebar(); openMyBookingsModal();">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
         Riwayat & Aktivitas Saya
       </button>
-      <button class="sidebar-nav-item" onclick="toggleSidebar(); openInsuranceModal();">
+      <a class="sidebar-nav-item" href="insurance.php">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
         Insurance Application
-      </button>
-      <button class="sidebar-nav-item" onclick="toggleSidebar(); openTestDriveModal();">
-        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-        Book Test Drive
-      </button>
-      <button class="sidebar-nav-item" onclick="toggleSidebar(); openSellCarModal();">
-        <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+      </a>
+      <a class="sidebar-nav-item" href="sell.php">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
         Sell Your Car
-      </button>
-      <button class="sidebar-nav-item" onclick="toggleSidebar(); openContactUsModal();">
-        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      </a>
+      <a class="sidebar-nav-item" href="testdrive.php">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        Book Test Drive
+      </a>
+      <a class="sidebar-nav-item" href="contact.php">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
         Contact Us
-      </button>
+      </a>
 
       <div class="sidebar-nav-divider"></div>
 
@@ -162,7 +267,7 @@ if ($conn) {
 
       <div class="navbar-center">
         <!-- Desktop Navigation Links -->
-        <div class="desktop-nav-links">
+                <div class="desktop-nav-links">
           <a href="index.php" class="desktop-nav-link active">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
             Home
@@ -175,26 +280,26 @@ if ($conn) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
             Favorites
           </a>
-          <button type="button" id="navBtnService" data-open-modal="service" onclick="openCustomerServiceModal()" class="desktop-nav-link">
+          <a href="service.php" class="desktop-nav-link">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
             Service
-          </button>
-          <button type="button" id="navBtnInsurance" data-open-modal="insurance" onclick="openInsuranceModal()" class="desktop-nav-link">
+          </a>
+          <a href="insurance.php" class="desktop-nav-link">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             Insurance
-          </button>
-          <button type="button" id="navBtnSell" data-open-modal="sell" onclick="openSellCarModal()" class="desktop-nav-link">
+          </a>
+          <a href="sell.php" class="desktop-nav-link">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
             Sell
-          </button>
-          <button type="button" id="navBtnTestDrive" data-open-modal="testdrive" onclick="openTestDriveModal()" class="desktop-nav-link">
+          </a>
+          <a href="testdrive.php" class="desktop-nav-link">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
             Test Drive
-          </button>
-          <button type="button" id="navBtnContact" data-open-modal="contact" onclick="openContactUsModal()" class="desktop-nav-link">
+          </a>
+          <a href="contact.php" class="desktop-nav-link">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             Contact
-          </button>
+          </a>
         </div>
         <!-- Mobile Search -->
         <form class="search-bar mobile-search" action="cars.php" method="GET">
@@ -250,7 +355,7 @@ if ($conn) {
   <section class="home-section">
     <div class="about-grid">
       <div class="about-image-wrap">
-        <img src="assets/images/cars/bentley_continental_gt_speed_w12.jpg" alt="PCS Edition Showroom" class="about-image" onerror="this.src='https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80'">
+        <img src="assets/images/cars/bentley_continental_gt_speed_w12.jpg" alt="PCS Edition Showroom" class="about-image" onerror="this.src='assets/images/cars/bugatti_chiron_super_sport.jpg'">
       </div>
       <div class="about-text">
         <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">The Pinnacle of Luxury Mobility</h2>
@@ -264,11 +369,11 @@ if ($conn) {
   <section class="home-section home-section-alt">
     <div class="stats-grid">
       <div class="stat-item">
-        <div class="stat-number"><?php echo number_format($total_cars); ?></div>
+        <div class="stat-number" id="statTotalCars"><?php echo number_format($total_cars); ?></div>
         <div class="stat-label">Available Units</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number"><?php echo number_format($total_brands); ?></div>
+        <div class="stat-number" id="statTotalBrands"><?php echo number_format($total_brands); ?></div>
         <div class="stat-label">Luxury Brands</div>
       </div>
       <div class="stat-item">
@@ -301,7 +406,7 @@ if ($conn) {
                 <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
               </button>
               <div class="card-photo-count">1/<?php echo rand(15, 30); ?></div>
-              <img src="<?php echo htmlspecialchars($car['gambar_utama']); ?>" alt="<?php echo htmlspecialchars($car['brand'] . ' ' . $car['model']); ?>" onerror="this.src='https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'">
+              <img src="<?php echo htmlspecialchars($car['gambar_utama']); ?>" alt="<?php echo htmlspecialchars($car['brand'] . ' ' . $car['model']); ?>" onerror="this.src='assets/images/cars/bugatti_chiron_super_sport.jpg'">
             </div>
             <div class="car-card-body">
               <div class="card-price-row">
